@@ -1,39 +1,62 @@
 % !TeX root = ../main.tex
 
-\chapter{简介}
+% \chapter{简介}
 
-\section{一级节标题}
+% \section{一级节标题}
 
-\subsection{二级节标题}
+% \subsection{二级节标题}
 
-\subsubsection{三级节标题}
+% \subsubsection{三级节标题}
 
-\paragraph{四级节标题}
+% \paragraph{四级节标题}
 
-\subparagraph{五级节标题}
+% \subparagraph{五级节标题}
 
-本模板 \pkg{ustcthesis} 是中国科学技术大学本科生和研究生学位论文的 \LaTeX{}
-模板， 按照《\href{http://gradschool.ustc.edu.cn/static/oldsite/ylb/material/xw/wdxz/32.pdf}
-{中国科学技术大学研究生学位论文撰写手册}》（以下简称《撰写手册》）和
-《\href{https://www.teach.ustc.edu.cn/notice/notice-teaching/11530.html}
-{关于本科毕业论文（设计）格式和统一封面的通知}》的要求编写。
+% 本模板 \pkg{ustcthesis} 是中国科学技术大学本科生和研究生学位论文的 \LaTeX{}
+% 模板， 按照《\href{http://gradschool.ustc.edu.cn/static/oldsite/ylb/material/xw/wdxz/32.pdf}
+% {中国科学技术大学研究生学位论文撰写手册}》（以下简称《撰写手册》）和
+% 《\href{https://www.teach.ustc.edu.cn/notice/notice-teaching/11530.html}
+% {关于本科毕业论文（设计）格式和统一封面的通知}》的要求编写。
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum.
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+% incididunt ut labore et dolore magna aliqua.
+% Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+% aliquip ex ea commodo consequat.
+% Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+% fugiat nulla pariatur.
+% Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+% deserunt mollit anim id est laborum.
 
 
 
-\section{脚注}
+% \section{脚注}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua.
-\footnote{Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  nisi ut aliquip ex ea commodo consequat.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-  eu fugiat nulla pariatur.}
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+% incididunt ut labore et dolore magna aliqua.
+% \footnote{Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+%   nisi ut aliquip ex ea commodo consequat.
+%   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+%   eu fugiat nulla pariatur.}
+\chapter{介绍}
+\section{研究背景}
+由于数据资源的巨大经济价值潜力，近年来出现了许多在线数据交易系统\cite{jung2017accounttrade}，
+如CitizenMe、DataExchange、Datacoup、Factual、Terbine等，数据消费者可以通过
+这些系统搜索和购买他们感兴趣的数据。然而，现实世界中的大部分数据都是由少数研究机构或
+公司保存的，它们只是为了自己的分析目的，而不是与那些有数据需求但自己没有能力收集数
+据的人分享，这导致交易系统中的数据量有限。由于很难从这些交易系统中获得适当的数据，因此极大
+地抑制了用户使用这些系统的意愿。为了解决这个问题，众包数据交易的概念被提出。众包数据交易与
+传统数据交易相比，在数据源获取方面具有更大的优势。它无需购置和部署专业的传感器节点，可以利
+用用户的移动性和其携带的传感设备，在广泛的区域内收集具有经济价值的数据\cite{tong2020spatial,wang2017efficient,he2017exchange}。
+一个典型的众包数据交易系统包括三个主要组成成分：数据卖家，数据买家和数据代理。根据数据买家给定
+的需求，数据代理雇佣数据卖家来收集数据，然后将原始数据或经过处理的数据卖给相应的买家。然而，传统
+的众包数据交易依赖于一个可信的第三方代理，这将导致用户怀疑交易的可靠性与真实性，从而降低用户
+使用这种交易系统的积极性。
+
+区块链技术的出现\cite{nakamoto2019bitcoin}为该问题提供了一种解决办法。由于其可靠性和透明性，
+用户几乎不可能篡改区块链上的数据。使用区块链技术，互不信任的的用户可以在缺少可信第三方代理的情况
+下完成可靠的数据交易和货币结算，同时这也避免了高昂的代理费用。为了完成基于区块链的去中心化的众包
+数据交易，可以使用部署在区块链上的自动执行的程序，称为智能合约\cite{buterin2014next}。智能合约
+可以强制用户履行各自的义务，从而代替可信第三方作为数据代理，完成去中心化的数据交易。
+\section{研究目标}
+设计一种基于区块链和不完全信息博弈的众包数据交易模型，能够不依赖于可信第三方，同时能够最大化参与
+方的利益并保护数据版权。
